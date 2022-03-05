@@ -4,7 +4,7 @@
 
 from re import L
 
-# without 2 pointers
+# without 2 pointers --> O(n^2) complexity 
 def maxsum(array,k):
     sum = 0
     maxsum = 0
@@ -19,6 +19,15 @@ def maxsum(array,k):
             sum = 0
     return maxsum 
 
+    
+def maxSumSW(array,k):
+    sum = 0
+    maxsum = 0
+    l = len(array)
+    for i in range(l):
+        pass    
+
+    return maxsum
 if  __name__=='__main__':
     array = [111,2,3,4,5,6,7]
     k = 3
