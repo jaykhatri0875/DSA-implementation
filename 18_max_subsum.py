@@ -19,16 +19,27 @@ def maxsum(array,k):
             sum = 0
     return maxsum 
 
-    
+# complexity -- O(n)
 def maxSumSW(array,k):
     sum = 0
     maxsum = 0
     l = len(array)
-    for i in range(l):
-        pass    
-
+    i,j=0,0
+    while(j<l):
+        sum = sum + array[j]
+        if(j-i+1<k):
+            #keep moving j untill given window size is not achieved
+            j+=1
+        elif(j-i+1 == k):
+            #print(sum)
+            # moving i and j and maintaining widow size here
+            maxsum = max(maxsum,sum)
+            sum = sum - array[i]
+            j+=1
+            i+=1
     return maxsum
+
 if  __name__=='__main__':
-    array = [111,2,3,4,5,6,7]
+    array = [1,2,33,4,5,6,7]
     k = 3
-    print(maxsum(array,k))
+    print(maxSumSW(array,k))
