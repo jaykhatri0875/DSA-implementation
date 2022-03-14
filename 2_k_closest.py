@@ -10,4 +10,12 @@ minar = []
 for ele in arr:
     minar.append(abs(x-ele))
 
-print(minar)
+#print(minar)
+
+def getEvenDigitNumbers(arr):
+    leg = []
+    for e in arr:
+        if(len(str(e))%2==0):
+            leg.append(e)
+    return leg
+print(getEvenDigitNumbers([42,5775,4,45,3556]))

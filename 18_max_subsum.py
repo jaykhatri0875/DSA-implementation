@@ -38,8 +38,18 @@ def maxSumSW(array,k):
             j+=1
             i+=1
     return maxsum
+def match(dict1,dict2):
+	keys2 = dict2.keys()
+	for key in dict1.keys():
+		if(dict2[key]==dict1[key]):
+			return 'same'
+		elif(key not in keys2):
+			return 'not same'
 
 if  __name__=='__main__':
     array = [1,2,33,4,5,6,7]
     k = 3
-    print(maxSumSW(array,k))
+    #print(maxSumSW(array,k))
+    dict1 = {'c':1,'a':2}
+    dict2 = {'b':3,'c':4}
+    print(match(dict1,dict2))
