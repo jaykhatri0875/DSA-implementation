@@ -17,7 +17,7 @@ def twoSum(array,k):
             return [array[i],array[j]]
         elif(k>sum):
             i +=1
-        else:
+        else:   
             j-=1
     return []
 if __name__=="__main__":
