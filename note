@@ -58,3 +58,9 @@ While (low<=high) assign mid=(high+low)/2.
 If mid is even then check if arr[mid] and arr[mid+1] are equal. If yes, then the element must be in the second half otherwise the element must be in the first half.
 If mid is odd then check if arr[mid] and arr[mid-1] are equal. If yes, then the element must be in the second half otherwise the element must be in the first half.
 When low and high are equal, return the value of arr[low] as it is the only element that is not equal to its previous or next element.
+
+#
+largest value sin python 
+float('inf')
+smallest value in python 
+float('-inf')

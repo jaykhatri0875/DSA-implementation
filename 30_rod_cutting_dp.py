@@ -10,7 +10,7 @@ def rod_cut(n,prices):
             else:
                 dp[i][j] = dp[i-1][j]
 
-    return dp
+    return dp[n][n]
 
 n = 8
 
